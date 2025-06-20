@@ -161,7 +161,7 @@ module.exports.promoteUser = async (req, res) => {
     throw new ExpressError(404, "User not found");
   }
   if (
-    user.email === "john.doe@example.com" ||
+    user.email === "amitpallai@gmail.com" ||
     user.email === "admin@gmail.com"
   ) {
     throw new ExpressError(401, "Master Admin cannot be modified");
