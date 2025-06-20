@@ -10,7 +10,7 @@ const userRouter = require("./router/users");
 // allow access of the api
 app.use(
   cors({
-    origin: "http://localhost:5173", 
+    origin: "https://bookglance-server.vercel.app", 
   })
 );
 

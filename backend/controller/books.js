@@ -40,7 +40,7 @@ module.exports.createBook = async (req, res) => {
   if (req.file) {
     let url = req.file.path;
     if (url.startsWith("public")) {
-      body.image_url = `https://reviewnest-backend.onrender.com/${url}`;
+      body.image_url = `https://bookglance-server.vercel.app/${url}`;
     } else {
       body.image_url = url;
     }
@@ -94,7 +94,7 @@ module.exports.updateBook = async (req, res) => {
   if (req.file) {
     let url = req.file.path;
     if (url.startsWith("public")) {
-      body.image_url = `https://reviewnest-backend.onrender.com/${url}`;
+      body.image_url = `https://bookglance-server.vercel.app/${url}`;
     } else {
       body.image_url = url;
     }
